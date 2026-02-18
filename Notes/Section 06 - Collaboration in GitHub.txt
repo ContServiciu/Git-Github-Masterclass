@@ -3,6 +3,16 @@
 
 To add collaborators on your repo, from repo page -> Settings -> collaborators -> add people
 
+Using colab:
+ - to give colab access to your google drive account:
+        from google.colab import drive
+        drive.mount('*address where you want it imported (drive folder by default)')
+
+        %cd to where you want to run your repo/files
+
+ - to clone a repo in colab:
+        !git clone (repo link with credentials in front) https://*username*:{*password*}@github.com/*repo link*
+
 ********************************************************************
 42. Protecting Branches on GitHub
 
