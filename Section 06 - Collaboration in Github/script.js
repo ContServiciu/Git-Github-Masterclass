@@ -1,4 +1,4 @@
-// alert("This is an alert!");
+alert("This is an alert!");
 
 const inputEl = document.getElementById("celsiusInput");
 const rezultatEl = document.getElementById("rezultat");
