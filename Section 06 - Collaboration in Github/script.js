@@ -22,6 +22,6 @@ inputEl.addEventListener("keydown", (e) => {
       inputEl.value = "";
       return;
     }
-    rezultatEl.innerText = `Temperature is ${convertCelsiusToKelvin(userInput)}K ${getEmoji(userInput)}`;
+    rezultatEl.innerText = `>>> Temperature is ${convertCelsiusToKelvin(userInput)}K ${getEmoji(userInput)} <<<`;
   }
 });
