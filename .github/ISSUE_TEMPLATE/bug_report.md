@@ -7,6 +7,8 @@ assignees: ConstantinLiviu
 
 ---
 
+**This is a mock-up file, one of the many files created during the course. All information provided in it is inacurate can be safely ignored!**
+
 **Describe the bug**
 A clear and concise description of what the bug is (e.g., a typo in a command, a broken link in a README, or a confusing explanation of a Git concept).
 
