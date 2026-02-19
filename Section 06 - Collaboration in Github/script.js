@@ -3,8 +3,15 @@
 const inputEl = document.getElementById("celsiusInput");
 const rezultatEl = document.getElementById("rezultat");
 
-function convertCelsiusToFahrenheit(celsius) {
-  return (celsius * 9) / 5 + 32;
+function convertCelsiusToKelvin(celsius) {
+  return parseFloat(celsius) + 273.15;
+}
+
+function getEmoji(celsius) {
+  if (celsius <= 0) return "🧊";     
+  if (celsius <= 20) return "☁️";    
+  if (celsius <= 35) return "😎";    
+  return "🔥";                       
 }
 
 inputEl.addEventListener("keydown", (e) => {
@@ -15,6 +22,6 @@ inputEl.addEventListener("keydown", (e) => {
       inputEl.value = "";
       return;
     }
-    rezultatEl.innerText = `Temperature is ${convertCelsiusToFahrenheit(userInput)} °F`;
+    rezultatEl.innerText = `Temperature is ${convertCelsiusToKelvin(userInput)}K ${getEmoji(userInput)}`;
   }
 });
